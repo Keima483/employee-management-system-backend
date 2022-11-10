@@ -8,11 +8,18 @@ The features of this project include:
 * A Serice layer which mannages the repository layer.
 * Use of lambok to decrease the code size.
 * Extensive use of good programming practices.
-<br>
+
 Now the features of this application include:
-1. Gives login and signup functionality to a company.
-2. Allows the company to keep record of all the employees they have.
-3. Allows the company to add, update or delete a users data.
-4. Allows the cpmpany to add bonuses and keep track of all the bonuses an employee got.
-5. Finally allows the company to calculate the salary of all the employees according to the days worked and base salary.
+* Gives login and signup functionality to a company.
+* Allows the company to keep record of all the employees they have.
+* Allows the company to add, update or delete a users data.
+* Allows the cpmpany to add bonuses and keep track of all the bonuses an employee got.
+* Finally allows the company to calculate the salary of all the employees according to the days worked and base salary.
 <br>
+
+This is the first commit of the project and is just the basic outline of the project, more functionality are comming soon so stay tuned.<br>
+The packages used for this project are:
+1. Spring boot starter web
+2. Spring boot starter data jpa
+3. Lombok
+4. MySQL connector java
