@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/employee_management
-    username: springstudent
-    password: springstudent
+    url: ${env.MYSQL_URL}
+    username: ${env.MYSQL_USERNAME}
+    password: ${env.MYSQL_PASSWORD}
   jpa:
     show-sql: true
     hibernate:
