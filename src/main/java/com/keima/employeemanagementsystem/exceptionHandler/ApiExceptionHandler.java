@@ -15,4 +15,10 @@ public class ApiExceptionHandler {
         ExceptionResponse exceptionResponse = new ExceptionResponse(loginException.getMessage());
         return new ResponseEntity<>(exceptionResponse, HttpStatus.BAD_REQUEST);
     }
+    
+    @ExceptionHandler(value = { EntityFindingException.class })
+    public ResponseEntity<ExceptionResponse> handleEntityException(EntityFindingException entityFindingException) {
+        ExceptionResponse exceptionResponse = new ExceptionResponse(entityFindingException.getMessage());
+        return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
+    }
 }
